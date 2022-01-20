@@ -1,0 +1,30 @@
+<!--
+    autoplay ---- o vídeo começa assim que abre a página
+    preload -> auto ---- começa a baixar as infromações do víideo antes do play
+    preload -> metadata ---- baixa informações apenas essenciais (duração)
+    preload -> none ---- não baixa nada até o play
+    loop ---- o vídeo roda de novo quando ele termina
+    muted ---- o vídeo começa mutado
+    posted ---- imagem de fundo até o vídeo começar
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="./videotls.mp4"></video>
+    ou
+
+    <video controls width="200" height="400" autoplay preload="auto" loop muted posted="./icon"><!--preload: none e metadata--></video>
+        <source src="./videotls.mp4" type="video/mp4">
+        <p>este browser não suporta video, baixe-o aqui...</p>
+    </video>
+
+
+</body>
+</html>

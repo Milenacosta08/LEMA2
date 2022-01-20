@@ -1,0 +1,32 @@
+/*
+background-color ----- cor de fundo
+background-image ----- imagem de fundo
+background-repeat ----- se a imagem vai repetir ou não
+background-position ----- a posição da imagem de fundo
+background-size ----- o tamanho da imagem de fundo
+background-origin ----- a origem da imagem, o local onde ela começa
+background-clip ----- origem tanto da imagem quanto da cor de fundo
+background-attachment ----- se a imagem vai rolar junto com o scroll ou vaificar fixa
+*/
+
+h1{
+    color:blue;
+}
+
+.texto{
+    border: 7px solid red;
+    padding: 10px;
+    background-color: rgb(100, 50, 50); /* HSL, elementos globais */
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat: no-repeat; /* repeat-x, repeat-y */
+    background-position: right center; 
+    background-size: contain; /* cover, %, em, px */
+    background-origin: border-box; /* content-box */
+    background-clip: content-box; /* border-box, padding-box */
+    background-attachment: fixed; /* scroll */
+    /* background: rgb(100, 50, 50) url(https://source.unsplash.com/random) no-repeat right top / 50px border-box content-box fixed; */
+
+    /* a última linha representa as linhas anteriores de forma comprimida (shorthand) na respectiva ordem */
+
+    background: linear-gradient(18deg, rgb(100,50,25), green); /* radial-gradient */
+}

@@ -1,0 +1,37 @@
+/* 
+    - Não é muito recomendado pois vai deixar um pouco mias lento sua pesquisa
+
+    @import 'url(...)' 
+*/
+
+h1{
+    background-color: bisque;
+    color: black;
+}
+
+/* CASCATA */
+
+/*
+    1. ORIGEM 
+    2. ESPECIFICIDADE 
+    3. IMPORTÂNCIA
+
+    * ORIGEM
+        INLINE > TAG STYLE > TAG LINK
+    
+    * ESPECIFICIDADE
+        0. Seletor universal, combinadores e pseudo-classe de nagação (:not())
+        1. Seletor de tipo do elemento e pseudo-elementos (::before, ::after)
+        10. Classes e selectores de atributos
+        100. Seletor de ID
+        1000. INLINE
+
+    * IMPORTANT
+        - Evitar usar
+        - não é considerado um aboa prática
+        - quebra o fluxo natual da cascata
+*/
+
+h1{
+    color: blue !important;
+}

@@ -1,0 +1,35 @@
+/*
+TIPOS NUMÉRICOS
+    <integer>    NÚMERO INTERIRO
+    <number>     NÚMERO DECIMAL
+    <dimension>  É UM <number> COM UMA UNIDADE JUNTO: 90deg, 2s, 8px
+    <percentagem> REPRESENTA A FRAÇÃO DE OUTRO NÚMERO
+
+UNIDADES COMUNS
+<lenght>    DISTÂNCIA: px, em, vw
+<angle>     ÂNGULO: deg, rad, turn
+<time>      TEMPO: s, ms
+<resolution> RESOLUÇÕES PARA DISPOSITIVOS: dpi
+
+*/
+
+li{
+    font-size: 90%;
+}
+
+.box1{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.box2{
+    margin: 5%;
+    margin-left: 35%;
+    height: 300px;
+    width: 400px;
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    background-position: left top;
+}

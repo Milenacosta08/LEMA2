@@ -1,0 +1,15 @@
+body{
+    height: 100vh;
+}
+
+.box{
+    height: calc(50% + 20px);
+    width: 100%;
+    background-image: url(https://source.unsplash.com/random);
+    background-position: center;
+}
+
+.box::after{
+    content: "Um texto vai aqui";
+    color: white;
+}
