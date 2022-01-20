@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header header" "main aside" "footer footer";
+    grid-template-rows: 30px 1fr 40px;
+    grid-template-columns: 1fr 20%;
+}
+
+header{
+    grid-area: header;  
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+main{
+    text-align: center;
+    grid-area: main;
+    background-color: lightblue;
+}
+
+aside{
+    text-align: center;
+    grid-area: aside;
+    background-color: violet;
+}
+
+footer{
+    text-align: center;
+    grid-area: footer;
+    background-color: blueviolet;
+}
+

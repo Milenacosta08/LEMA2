@@ -1,0 +1,101 @@
+<!--
+    <FIELDSET>
+    - agrupamento de campos
+    - mesmo propósito
+    - semântico
+    - acessibilidade
+
+        ATRIBUTOS ESPECIAIS
+        * disabled
+            - desabilita todos os elementos internos
+            - não serão eviados ao submeter o formulário
+        * form
+            - o id de um formulário ao qual esse fieldset pertence
+            - não precisa estar dentro de formulário
+        * name
+            - nome do grupo
+
+    <LEGEND>
+    - nome do agrupamento
+    - primeiro elemento do fieldset
+
+-->
+
+<form action="">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<!--
+* OUTRA FORMA DE FAZER O PROCESSO ACIMA
+* UTILIZAR QUANDO POR ALGUM MOTIVO NÃO FOR POSSÍVEL COLOCAR O FIELDSET DENTRO DO FORM
+-->
+
+<form action="" id="contato">
+    <button>enviar</button>
+</form>
+
+<fieldset form="contato">
+    <legend>Dados Pessoais</legend>
+    <label for="">Nome</label>
+    <input type="text">
+</fieldset>
+
+
+<!--
+    BUTTON
+    - representa um botão
+    - usdo para enviar formulário
+    - é estilizado pelo user agent
+
+    Atributos comuns
+        * type
+            - submit
+            - reset
+            - button
+        * autofocus
+        * disabled
+        * name
+        * value
+        * form
+-->
+<button type="reset">Resetar</button>
+
+<!--
+    DATALIST
+    - Lista de valores como sugestão a uma tag <input>
+    - Valores sugestivos e não obrigatórios
+    - Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão
+
+    LIST
+    - Recebe como valor o id de um <datalist> reidente no mesmo documento
+    
+    TIPOS DE INPUT
+        * text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color
+    
+    - Valores de datalist que não são compatíveis com o tipo do <input> não serão apresentados
+
+    TIPOS DE INPUT NÃO SUPORTADOS (conforme especificado)
+        * hidden, password, checkbox, radio, file, ou qualqer tipo de button
+    -->
+<br>
+<input type="text" list="fruits" placeholder="Escolha uma fruta"/>
+
+<datalist id="fruits">
+    <option>maçã</option>
+    <option>laranja</option>
+    <option>limão</option>
+    <option>banana</option>
+</datalist>
+
+<br>
+<datalist id="colors">
+    <option>#00ff00</option>
+    <option>#ff0ff0</option>
+</datalist>
+
+<input type="color" list="colors">
+

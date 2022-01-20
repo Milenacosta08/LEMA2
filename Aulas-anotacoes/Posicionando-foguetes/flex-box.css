@@ -1,0 +1,39 @@
+/* 
+    flex-direction: column -> RETORNA AO PADRÃO DE COLUNA, UMA ABAIXO DA OUTRA
+
+    justify-content: center -> DEIXA AS CAIXAS JUNTAS, SEM ESPAÇOES ENTRE ELAS
+
+    justify-content: space-between -> COLOCA  SEMPRE ESPAÇO ENTRE AS CAIXAS
+*/ 
+
+/* ESSA CONFIGURAÇÃO DO BODY MAIS O WIDTH:100VH DO CONTAINER TORNA POSSÍVEL QUE AS CAIXAS FIQUEM BEM NO CENTRO DA JANELA*/
+
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
