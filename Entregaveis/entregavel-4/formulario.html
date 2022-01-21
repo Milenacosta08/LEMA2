@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário - Contato</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label for="name">Nome</label>
+                <br>
+                <input type="text" id="name" placeholder="Digite seu nome" title="Digite seu nome aqui" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" title="Apenas emails @gmail.com serão aceitos" placeholder="Digite seu email" pattern=".+@gmail\.com" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="msg">Mensagem</label>
+                <br>
+                <textarea name="mensagem" id="msg" cols="20" rows="5" title="Digite sua mensagem aqui"></textarea>
+            </div>
+            <br>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
