@@ -1,0 +1,70 @@
+<!--
+    <input type="search"/>
+
+    - Para campos de busca
+    - É igual ao campo do tipo "text" mas poderá ser um pouco diferente dependendo do user agent
+
+    ATRIBUTOS
+        - list
+        - pattern
+            * Não permite todo tipo de termo de pesquisa
+            * [0-9]{2}
+        - aria-label
+-->
+
+<p>Input do tipo search</p>
+<datalist id="busca">
+    <option>Mac</option>
+    <option>Win</option>
+    <option>Linux</option>
+</datalist>
+
+<form action="">
+    <input type="search" name="q" list="busca" placeholder="Digite seu termo de busca" size="30" aria-label="Campo de pesquisa"/>
+
+    <button type="submit">Pesquisar</button>
+</form>
+
+
+<!--
+    <input type="number">
+
+    - Entrada de números
+
+    ATRIBUTOS
+        - min/max
+        - step
+-->
+
+<p>Input do tipo number</p>
+<input type="number" min="1" max="100" step="10" placeholder="Digite apenas números">
+
+
+<!--
+    <inpue type="range">
+    
+        - Controle para selecionar um valor numérico (vertical)
+        - Slider ou dial control
+
+    ATRIBUTOS
+        - min/max
+        - step
+-->
+
+<p>Input do tipo range</p>
+<input type="range" min="10" max="1000" step="5">
+
+<p>Input do tipo date</p>
+<input type="date" value="yyyy-mm-dd">
+
+<p>Input do tipo datetime-local</p>
+<input type="datetime-local">
+
+<p>Input do tipo month</p>
+<input type="month">
+
+<p>Input do tipo time</p>
+<input type="time">
+
+<p>Input do tipo week</p>
+<input type="week">

@@ -1,0 +1,90 @@
+<!--
+    <input type="hidden">
+
+    - Invisível ao usuário
+    - Será enviado com o formulário
+    - Não recebrá foco
+    - Leitores de tela não percebe esse campo
+-->
+
+<input type="hidden" name="id" value="8">
+
+<!--
+    <input type="radio">
+
+    - Projetado para selecionar uma única opção de um grupo de opções
+
+    ATRIBUTOS ESSENCIAIS
+        - checked
+        - value
+-->
+
+<p>Input do tipo radio</p>
+<fieldset>
+    <legend>Deseja habilitar essa função?</legend>
+
+    <input type="radio" name="habilitar" id="yes" value="sim">
+    <label for="yes">Sim</label>
+    <input type="radio" name="habilitar" id="no" value="nao">
+    <label for="no">Não</label>
+</fieldset>
+
+<!--
+    TEXTAREA
+    - Mais de uma linha
+    - Útil para textos grandes
+
+    ATRIBUTOS
+        - id
+        - name
+        - rows e cols
+        - maxlength e minlength
+        - wrap (tipo quebra de texto dentro da caixa)
+            * soft, hard ou of
+        - outros comuns aos input
+-->
+
+<p>Textarea</p>
+<textarea name="resumo" cols="40" rows="10" placeholder="Digite seu resumo aqui"></textarea>
+
+<!--
+    SELECT
+    - Controle que fornece um menu de opções
+
+    OPTION
+    - Contém as opções a serme selecionadas
+    - Atributos necessários
+        * value
+    
+    ATRIBUTOS ÚNICOS
+        - multiple
+        - size
+            * Quantidade de opções visíveis
+-->
+
+<p>Select - tipo de música</p>
+<select name="music" id="music" multiple>
+    <option value="mpb">MPB</option>
+    <option value="rock">Rock</option>
+    <option value="sertanejo">Sertanejo</option>
+    <option value="pop">Pop</option>
+</select>
+
+<p>Optgroup</p>
+<label>Escolha um ou mais pets:
+    <select name="pets" multiple size="8">
+        <optgroup label="animais pequenos">
+            <option value="peixe">Peixe</option>
+            <option value="gato">Gato</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="hamster">Hamster</option>
+        </optgroup>
+        <optgroup label="animais pessonhentos">
+            <option value="aranha">Aranha</option>
+            <option value="cobra">Cobra</option>
+            <option value="sapo">Sapo</option>
+        </optgroup>
+    </select>
+</label>
+
+

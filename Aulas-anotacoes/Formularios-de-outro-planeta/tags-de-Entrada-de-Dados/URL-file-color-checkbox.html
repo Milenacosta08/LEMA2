@@ -1,0 +1,97 @@
+<!--
+   <input type="url" />
+   - Espera que o usuário digite uma URL
+   - Irá validar se o valor digitado é uma URL
+
+   ATRIBUTOS
+    - placeholder
+    - readonly / disabled
+    - values
+    - required
+    - minleigth / maxlegth
+    - size
+    - pattern
+        * pattern=".*\.com\.br\/.*"
+    - list
+    - spellcheck
+        * Habilitar a verificação ortográfica para este input
+-->
+<p>Input do tipo URL</p>
+<form action="">
+    <datalist id="urls">
+        <option>http://google.com.br</option>
+    </datalist>
+    <input type="url" placeholder="Digite uma URL aqui" pattern=".*\.com\.br.*" title="Somente domínios .com.br serão aceitos" spellcheck="true" list="urls" required>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    <input type="file">
+    - Usuário poderá escolher um ou mais arquivos para enviar no formulário
+
+    ATRIBUTOS
+        - value
+            * contém o arquivo a ser enviado
+        - accept
+            * descreve que tipos de arquivos serão aceitos (.doc .docx .pdf audio/* image/png .png)
+        - files
+            * a lista de arquivo ou arquivos
+        - multiple
+-->
+<p>Input do tipo file</p>
+<form action="" method="post" enctype="multpart/form-data">
+    <input type="file" accept=".pdf" multiple>
+    <button type="submit">Enviar</button>
+</form>
+
+<!--
+    <input type="color">
+    - Interface para selecionar cor
+    - Color picker
+
+    ATRIBUTOS
+        - value: RGB
+            * Se inválido, o preto será exibido
+        - list
+-->
+
+<p>Input do tipo color</p>
+<datalist id="colors">
+    <option>#f0000f</option>
+    <option>#0000ff</option>
+</datalist>
+<input type="color" value="#0f00f0" list="colors">
+
+<!--
+    <input type="checkbox">
+
+    - Caixas que podem ser marcadas
+    - Selecionar um valor para seer enviado
+    - Se não selecionado, não será enviado nenhum dado
+
+    ATRIBUTOS
+        - globais
+        - value
+            * valor que aquele campo contém
+            * se não estiver presente, o padrão é "on"
+        - checked
+            * para deixar o campo marcado por padrão
+
+    MARACAR MÚLTIPLOS VALORES
+        - Usaremos o atributo 'name' com o mesmo nome para os diversos campos
+-->
+
+<p>Input do tipo checkbox</p>
+<fieldset>
+    <legend>Marque as matérias que deseja estudar nesse semestre</legend>
+    <div>
+        <input type="checkbox" id="so" name="question" value="so">
+        <label for="so">Sistemas Operacionais</label>
+        <input type="checkbox" id="poo" name="question" value="poo"checked>
+        <label for="poo">Programação Orientada a Objetos</label>
+    </div>
+    <div>
+        <input type="checkbox" id="ed" name="question" value="ed">
+        <label for="ed">Estrutura de Dados</label>
+    </div>
+</fieldset>
