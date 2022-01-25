@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando JS</title>
+</head>
+<body>
+    <h1>Essa prática pode ser acompanhada no console da página (devtools -> F12)</h1>
+
+    <script>
+        // 1. Declare uma variável de nome weight
+        let weight
+
+        // 2. Que tipo de dado é a variável acima?
+        console.log(typeof weight)
+
+        /* 3. Declare uma variável e atribua valores para cada um dos dados
+            * name: String
+            * age: Number (integer)
+            * stars: Number (float)
+            * isSubscribed: Boolean
+        */
+
+        let name = "Milena"
+        let age = 20
+        let stars = 47.7
+        let isSubscribed = true
+
+        // 4. A variável student abaixo é de que tipo de dados?
+        let student = {}
+
+        console.log(typeof student)
+
+        /*
+        4.1 Atribua a ela as mesmas porpriedades e valores do exercício 3
+
+        4.2 Mostre no console a seguite mensagem: <name> de idade <age> pesa <weight> kg.
+
+            Atenção, susbstitua <name> <age> e <weight> pelos valores de cada propriedade do objeto
+        */
+
+        student = {
+            name: "Milena", age: 20, weight: 47.7, isSubscribed: true
+        }
+
+        console.log(`${student.name} de idade ${student.age} pesa ${student.weight} kg.`)
+
+        // 5. Declare uma variável do tipo Array, de nome students e atribua a ela nenhum valor, ou seja, somente um Array vazio
+
+        let students = []
+
+        // 6. Reatribua para a variável acima, colocando dentro dela o objeto student da quetsão 4.
+
+        students = [
+            student
+        ]
+
+        // 7. Coloque no console o valor da posição zero do Array acima
+
+        console.log(students[0])
+
+        // 8. Crie um novo student e coloque na posição 1 do Array students
+
+        const studentJosep = {
+            name: "Josep", age: 18, weight: 65.5, isSubscribed: false
+        }
+
+        students[1] = studentJosep
+        console.log(students)
+
+        // 9. Sem rodar o código responda qual a resposta do código abaixo e por quê? Após sua resota, rode o código e veja se você acertou.
+
+        //RESPOSTA: undefined, pois a variável não está declarada acima do console.log. Porém, o tipo de variável var utiliza-se de hoisting, onde a declaração desta é levada para cima, mas a atribuição de valor permanece no mesmo local.
+
+        console.log(a)
+        var a = 1
+        
+    </script>
+</body>
+</html>
