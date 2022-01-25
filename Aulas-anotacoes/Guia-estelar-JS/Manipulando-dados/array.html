@@ -1,0 +1,49 @@
+<script>
+    // MANIPULANDO ARRAYS
+
+    // Criar Array com construtor
+    let novoArray = new Array(10)
+    console.log(novoArray)
+
+
+    //Contar elementos de um Array
+    console.log(novoArray.length)
+
+    console.log([
+        'a',
+        {type: "array"},
+        function() {return 'alo galera'}
+        ][2]())
+
+    
+    // Tranformar uma cadeia de caracteres em elementos de um array
+    let word = 'manipulação'
+    console.log(Array.from(word))
+
+
+    // Adicionar um item no fim
+    let techs = ['html', "css", "js"]
+    techs.push('nodejs')
+
+    // Adicionar no começo
+    techs.unshift("sql")
+
+    // Remover do fim
+    techs.pop()
+
+    // Remover do começo
+    techs.shift()
+
+    // Pegar somente alguns elementos do array
+    console.log(techs.slice(1, 3))
+
+    // Remover um ou mias itens em qualque posição do array
+    techs.splice(1, 1)
+
+    // Encontrar a posição de um elemento no array
+    let index = techs.indexOf('css')
+    techs.splice(index, 1)
+
+    console.log(techs)
+
+</script>

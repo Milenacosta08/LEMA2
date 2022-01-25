@@ -1,0 +1,46 @@
+<script>
+    // ARROW FUNCTION
+
+    const sayMyName = (name) => {
+        console.log(name)
+    }
+
+    sayMyName('Milena')
+
+
+    // CALLBACK FUNCTION
+
+    function sayMyAge(age){
+        console.log('antes de executar a função callback')
+
+        age()
+
+        console.log('depois de executar a callback')
+    }
+
+    sayMyAge(
+        () => {
+            console.log('estou em uma callback')
+        }
+    )
+
+
+    /* FUNCTION() CONSTRUCTOR
+        * expressa new
+        * criar um novo objeto
+        * this keyword
+    */
+
+        function Person(name) {
+            this.name = name
+            this.walk = function(){
+                return this.name + " está andando"
+            }
+        }
+
+        const milena = new Person('Milena', 20)
+        const joao = new Person('João', 18)
+        console.log(milena.walk())
+        console.log(joao.walk())
+
+</script>
