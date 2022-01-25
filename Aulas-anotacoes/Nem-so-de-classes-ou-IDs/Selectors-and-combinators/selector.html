@@ -1,0 +1,54 @@
+<!--
+    SELECTORES
+    - Conecta um elemento HTML com CSS a fim de alterar o elemento
+
+    TIPOS
+    * Element selector  (p, h1 ...)
+        - Todos os elementos HTML 
+    * ID Selector  (id = title, #title)
+        - Um elemento que tenha um atributo id
+        - Cada id deverá ser único
+    * Class Selector  (class = red, .red)
+        - Os elementos que contenha um atributo class
+        - Podemos ter uma ou mais classes
+    * Attribute Selector  (title = "algum título", [title])
+        - Um elemento que tenha um atributo específico
+    * Pseudo-class selector  (p:hover)
+        - Elementos em um estado específico
+
+
+    MÚLTIPLOS
+    - Você poderá selecionar múltiplos elementos e aplicar alguma regra css para todos eles.
+    - Usamos separação por vírgula para isso
+        h1, p, a, .red, [title] {
+            color: red;
+        }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando conhecimentos</title>
+    <link rel="stylesheet" href="./selector.css">
+</head>
+<body>
+   <main>
+    <h1>Imagina um título aqui</h1>
+    <span id="card">Uma mini descrição</span>
+    <div class="texto" title="Texto qualquer">
+        <p>Agora uma frase impactante</p>
+        <p>E o texto pra valer</p>
+    </div>
+   </main>
+   <hr>
+
+   <footer>
+       copyring 2020
+   </footer>
+</body>
+</html>
+
+

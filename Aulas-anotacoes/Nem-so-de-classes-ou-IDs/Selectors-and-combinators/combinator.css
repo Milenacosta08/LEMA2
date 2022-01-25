@@ -1,0 +1,27 @@
+/* DESCENDANT COMBINATOR */
+body article h2 {
+    color: darkgreen;
+}
+
+/* CHILD COMBINATOR */
+body > ul > li {
+    color: blue;
+}
+
+/* ADJACENT SIBLING COMBINATOR */
+h2 + h3 {
+    color: violet;
+}
+
+button + button {
+    margin-left: 32px;
+}
+
+/* GENERAL SIBLING COMBINATOR */
+h1 ~ p {
+    color: red;
+}
+
+ul > li[class="red"] {
+    color: red;
+}

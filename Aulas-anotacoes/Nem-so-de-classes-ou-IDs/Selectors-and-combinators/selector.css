@@ -1,0 +1,12 @@
+h1 {
+    color: darkblue;
+    border-bottom: dotted;
+}
+
+.texto {
+    background-color: aquamarine;
+}
+
+[title]:hover, #card:hover {
+    color: red;
+}

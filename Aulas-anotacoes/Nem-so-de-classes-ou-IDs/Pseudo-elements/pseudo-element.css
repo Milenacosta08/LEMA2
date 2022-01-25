@@ -1,0 +1,19 @@
+
+/* before  ->  coloca coisas antes dos elementos */
+li::before {
+    content: "-> ";
+}
+
+/* after  ->  coloca coisas depois dos elementos*/
+li::after {
+    content: ";";
+}
+
+/* first-line  ->  pegam somente as primeiras linhas */
+p::first-line {
+    font-weight: bold;
+}
+
+p:nth-of-type(2)::first-line {
+    color: blue;
+}

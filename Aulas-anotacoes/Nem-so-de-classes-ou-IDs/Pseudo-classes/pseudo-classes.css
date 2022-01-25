@@ -1,0 +1,44 @@
+/* first-child  ->  pegar o primeiro elemento (filho) */
+ul li:first-child {
+    font-weight: bold;
+}
+
+/* nth-of-type()  ->  pega o elemento selecionado, começa a contar do primeiro elemento do tipo selecionado */
+article p:nth-of-type(1) {
+    font-weight: bold;
+    color: blue;
+}
+
+/* nth-child()  -> pega o elemento selecionado, começa a contar do primeiro filho */
+article p:nth-child(3){
+    color: violet;
+}
+
+/* nth-child odd (ímpares) e even (pares) */
+
+ul li:nth-child(odd) {
+    background-color: #eee;
+}
+ul li:nth-child(even) {
+    color: darkgray;
+}
+
+/* hover  ->  quando o ponteiro do mouse está em cima */
+a:hover {
+    color: blueviolet;
+}
+
+/* focus  ->  quando clica no input*/
+input:focus {
+    color: red; 
+}
+
+/* disabled  ->  quando estiver desabilitado */
+input:disabled {
+    background-color: gray;
+}
+
+/* required  ->  quando for obrigatório preencher */
+input:required {
+    background-color: red;
+}

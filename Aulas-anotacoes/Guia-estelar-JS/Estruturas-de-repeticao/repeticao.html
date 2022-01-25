@@ -1,0 +1,55 @@
+<script>
+    // ESTRUTURAS DE REPETIÇÃO
+
+    // FOR
+
+    // break -> para a execução do loop
+    // continue -> pula a execução do momento
+    for(let i=0; i<10; i++) {
+
+        if(i === 5) {
+            continue;
+        }
+
+        console.log(i)
+    }
+
+    console.log('resto do código')
+
+
+    // WHILE
+
+    let i = 0
+    while(i < 10) {
+        console.log(i)
+        i++;
+    }
+
+
+    // FOR...OF
+
+    let name = 'Milena'
+    let names = ['João', 'José', 'Maria']
+
+    for(let char of name) {
+        console.log(char)
+    }
+
+    for(let name of names) {
+        console.log(name)
+    }
+
+
+    // FOR...IN
+    
+    // trabalha sobre objetos
+    let person = {
+        name: 'Milena',
+        age: 20,
+        weight: 48.7
+    }
+
+    for(let property in person) {
+        console.log(`${property}: ${person[property]}`)
+    }
+</script>

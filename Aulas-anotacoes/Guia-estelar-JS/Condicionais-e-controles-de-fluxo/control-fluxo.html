@@ -1,0 +1,65 @@
+<script>
+    // IF...ELSE
+
+    let temperature = 37.4
+    let mediumTemperature = temperature >=37 && temperature < 37.5
+
+    if(temperature >= 37.5){
+        console.log('Está com febre alta')
+    } else if(mediumTemperature){
+        console.log("Está com febre moderada")
+    }
+    else {
+        console.log('Está sem febre')
+    }
+
+
+    // SWITCH
+
+    function calculadora(number1, operator, number2){
+        let result = 0
+    
+        switch(operator) {
+            case '+':
+                result = number1 + number2
+                break
+            case '-':
+                result = number1 - number2
+                break
+            case '*':
+                result = number1 * number2
+                break
+            case '/':
+                result = number1 / number2
+                break
+            default:
+                console.log('Não implementado')
+                break
+        }
+        return result
+    }
+
+    console.log(calculadora(4, '+', 8) + calculadora(8, '/', 4))
+
+
+    // THROW
+
+    function sayMyName(name){
+        if(name === ''){
+            throw new Error("Nome é obrigatório") // ou throw 'Nome é obrigatório'
+        }
+        
+        console.log('Depois do erro') // o throw interrompe a aplicação, por isso essa mensagem não aparece
+    }
+
+    // TRY...CATCH
+    try {
+        sayMyName()
+    }
+    catch(e) {
+        console.log(e)
+    }
+
+    console.log("Após a função de erro")
+    // com o try...catch o código não é interrompido com o erro ele segue o fluxo normalmente
+</script>

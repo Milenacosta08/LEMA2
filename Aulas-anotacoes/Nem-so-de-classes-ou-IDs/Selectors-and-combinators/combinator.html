@@ -1,0 +1,89 @@
+<!--
+    COMBINATORS
+    - Combinadores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização
+
+    DESCENDANT COMBINATOR
+        * Identificado por um espaço entre os seletores
+        * Busca um elemento dentro de outro
+            body article h2
+-->
+
+
+<!--
+    CHILD COMBINATOR
+        * Identificado pelo sinal > entre dois seletores
+        * Seleciona somente o elemento que é filho direto do pai
+        * Elementos depois do filho direto serão desconsiderados
+            body /. ul > li
+-->
+
+
+<!--
+    ADJACENT SIBLING COMBINATOR
+        * Identificado pelo sinal + entre dois seletores
+        * Seleciona somente o elemento do lado direito que é irmão direto a hierarquia
+-->
+
+<!--
+    GENERAL SIBLING COMBINATOR
+        * Identificado pelo sinal ~ entre dois seletores
+        * Selecona todos os elementos irmãos
+-->
+
+<!--
+    DICA
+        * Seletores muito específicos tendem a causar dificuldades no reuso das regras de estilização dos elementos
+        * Muitas vezes, um simples uso de classes, torna o trabalho mito mais eficiente
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <link rel="stylesheet" href="./combinator.css">
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p>Esse é um parágrafo</p>
+    <article>
+        <h2>Um título</h2>
+    </article>
+
+    <article>
+        <h2>Outro título</h2>
+    </article>
+
+    <div>
+        <article>
+            <p>
+                <h2>Mais um título</h2>
+            </p>
+        </article>
+    </div>
+
+    <h2>Tal tal tal</h2>
+    <h3>Tel tel tel</h3>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul>
+            <li>Item 2 A</li>
+        </ul>
+    </ul>
+
+    <button>Um botão</button>
+    <button>Outro click</button>
+
+    <p>Outro parágrafo</p>
+
+    <ul>
+        <li>Aloooo</li>
+        <li class="red">Helloo</li>
+    </ul>
+</body>
+</html>
