@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    display: flex;
+}
+
+footer {
+    font-style: italic;
+    flex: 1;
+    height: 5rem;
+    margin-top: auto;
+    background-color: lightgray;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

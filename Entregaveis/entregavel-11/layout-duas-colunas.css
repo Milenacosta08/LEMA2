@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+header {
+    text-align: center;
+    background-color: lightsteelblue;
+    margin-bottom: 1%;
+}
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+aside, main {
+    text-align: center;
+    height: 98vh;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+aside {
+    flex-basis: 25%;
+}
+
+main {
+   flex-grow: 1; 
+}
+
+aside:hover, main:hover {
+    background-color: mediumaquamarine;
+}

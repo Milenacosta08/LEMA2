@@ -1,0 +1,27 @@
+
+header {
+    background-color: gray;
+    text-align: center;
+    padding: 2rem;
+}
+
+main{
+    background-color: lightgrey;
+}
+
+.galeria {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    justify-content: center;
+}
+
+img {
+    height: auto;
+    width: 30%;
+}
+
+img:hover {
+    outline: aquamarine 2px solid;
+}

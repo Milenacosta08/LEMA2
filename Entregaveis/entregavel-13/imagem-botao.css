@@ -1,0 +1,13 @@
+
+button {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    gap: .4rem;
+}
+
+button:hover{
+    background-color: aquamarine;
+    outline: aqua 1px solid;
+}
+
