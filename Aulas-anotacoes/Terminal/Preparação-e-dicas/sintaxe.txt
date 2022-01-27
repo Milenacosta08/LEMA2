@@ -1,0 +1,19 @@
+SINTAXE
+
+    ls -lh /usr/bin
+
+1. Command  (ex: ls)
+    * programa que você está rodando
+    * obrigatório
+
+2. Option(s)  (ex: -lh)
+    * Mudar o comportamento
+    * Explicar ao comando como deve funcionar
+    * Geralmente, começa com um traço
+    * Geralmente, uma letra somente
+    * A maioria dos comandos oferecem muitas opções
+    * A ordem não importa
+
+3. Argument(s)  (ex: /usr/bin)
+    * Onde o comando irá operar?
+    * Caminho do arquivo ou diretório

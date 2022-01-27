@@ -1,0 +1,110 @@
+INFORMAÇÕES DO DIRETÓRIO ATUAL
+* pwd
+    - Mostrar o diretório atual
+
+
+NAVEGANDO PELAS PASTAS
+* ~
+    - Volta ao User
+
+* cd
+    - Mudar de diretório
+    - .  (diretório atual)
+    - ..  (voltar diretórios)
+    - ~  (voltar de onde veio)
+
+
+LISTANDO ARQUIVOS E PASTAS
+* ls
+    - lista arquivos e pastas
+    - -l  (mais informações)
+    - -a  (all) -> mostra arquivos ocultos
+    - -h  (human)
+    - -R  (recursive) -> mostra os arquivos de cada pasta
+    - -S  (ordenar pelo tamanho)
+
+
+OBTENDO INFORMAÇÕES DOS ARQUIVOS
+* file
+    - tipo do arquivos
+    - informações
+
+* stat
+    - dono
+    - modificações
+    - tamanho
+
+
+CRIANDO DIRETÓRIOS COM MKDIR
+* mkdir
+    - criar diretórios
+    - -p  (parents)  ->  múltiplos diretórios
+        => exemplo: mkdir -p site2/src site2/public site3/src
+
+
+CRIANDO ARQUIVOS COM TOUCH
+* touch
+    - alterar registro de data e hora de arquivos ou pastas
+    - criar um ou mais arquivos
+
+
+COPIANDO ARQUIVOS E PASTAS
+* cp
+    - copiar
+    - primeiros argumento o que quero copiar
+    - último argumento local onde quero copiar
+    - exemplo: cp file1.txt file2.txt arquivo.txt
+    - para copiar diretórios é preciso colocar o -r
+    - exemplo: cp -r site site2 siteWeb
+
+
+MOVENDO E RENOMEANDO ARQUIVOS E PASTAS
+* mv
+    - mover (renomear)
+    - exemplo: mv arquivo.txt sites2
+               mv site site2 sites
+    - exemplo renomear: mv arquivo.txt site.txt
+
+
+REMOVENDO ARQUIVOS OU PASTAS
+* rm
+    - remover (para sempre)
+    - -r -> para remover diretórios inteiros
+    - -f (force) -> remover sem perguntar
+    - exemplo: rm file2.txt arquivo.txt
+               rm -r sites
+
+
+WILDCARDS (CURINGAS)
+    - * (um ou mais caracter)
+    - ? (um caracter)
+    - exemplo: mv sites/si* sites
+               mv sites/site? sites
+
+
+ENCONTRAR ARQUIVOS E DIRETÓRIOS
+* find
+    - encontrar arquivos e diretórios
+    - find <path> ar [expression]
+        -> -type <d|f> (diretório ou arquivo)
+        -> -name ""  -> nome do arquivo ou diretório
+        - exemplo: find . -type f -name "*.mp4"
+
+
+VER CONTEÚDO DE ARQUIVOS COM LESS E CAT
+* less
+    - posso controlar um pouco mais de como quero ver
+
+* cat
+
+
+EDITANDO ARQUIVOS COM NANO E VIM
+* nano
+    - editor de texto padrão
+    - cntrl + o (salvar)
+    - cntrl + x (sair)
+
+* vim
+    - não convencional
+    - bem mais avançado
+      

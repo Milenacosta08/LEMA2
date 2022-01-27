@@ -1,0 +1,33 @@
+DICAS E TRUQUES
+
+* Tab completion 
+    - Command
+    - arguments
+
+    - completa algo que você não lembra só apertando no Tab
+
+
+ATALHOS
+* setinhas
+    - up-down  
+        -> para cima :  comandos anterioes
+        -> para baixo : próximos comandos
+
+    - Ctrl
+        -> setinhas : pula palavras
+        -> A : início da linha
+        -> E : final da linha
+        -> U : limpa a linha
+        -> K : remove do cursor até o final da linha
+        -> L : clear (mantém a linha)
+
+
+CONSEGUINDO AJUDA (Não funciona)
+* MANUAL DOS COMANDOS
+    - man
+    - exemplo: man ls
+
+* apropos
+    - quando não lembro o comando
+    - exemplo apropos "directory"
+
