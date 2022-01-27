@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="./layoutCSS.css">
+</head>
+<body>
+    
+    <!--
+        LAYOUTS E EVOLUÇÃO
+            - Layout tem a ver com a maneira que os elementos estão distribuídos na tela
+        
+        NORMAL FLOW
+            - Ou Flow Layout é a maneira que o elementos `block` e `inline` ficam na página
+    -->
+
+    <p> Texto block com <strong>inline</strong> dentro</p>
+    <div>
+        Texto block
+    </div>
+    <hr>
+
+
+    <!--
+        TABLES
+            - É a maneira de tabelas onde a tag `table` recebe um display `table` fazendo com que os elementos internos como `td` e `tr` possam ser usados para montar uma tabela
+    -->
+
+    <table>
+        <tr>
+            <td>Macarrão</td>
+            <td>3,99</td>
+        </tr>
+        <tr>
+            <td>Arroz</td>
+            <td>5,75</td>
+        </tr>
+        <tr>
+            <td>Feijão</td>
+            <td>5,99</td>
+        </tr>
+    </table>
+    <hr>
+
+    
+    <!--
+        TABLESS
+            - Uso das propriedades `float`, `clear` para que os elmentos possam mudar de posição na tela
+    -->
+
+    <div style="float: left">esquerda</div>
+    <div style="float: right">direita</div>
+    <div style="clear: both;">Flow normal</div>
+    <hr>
+
+
+    <!--
+        FLEXBOX
+            - A caixa se torna flex, fazendo com que os elementos internos possam receber melhor
+                * Alinhamento
+                * Ordenação
+                * Tamanhos flexíveis
+    -->
+    <div class="flexbox">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!--
+    PROPRIEDADES PARA OS ITENS
+        - flex-basis
+        - flex-grow
+        - flex-shrink
+        - flex
+        - order
+-->
+
+<!--
+    FLEX-GROW
+    - O crescimento do item dentro do container em relação aos espaços vazios
+-->
+
+<!--
+    FLEX-SHRINK
+    - O encolhedor do item dentro do container
+-->
+
+<!--
+    FLEX
+        - Shorthand
+        - flex-grow flex-shrink flex-basis
+        - podem ter 1, 2 ou 3 valores
+-->
+
+<!--
+    ORDER
+        - Serve para ordenar os elementos na caixa
+        - todos os orders por padrão é 0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./propriedadeItens.css">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Propriedade dos itens</h1>
+
+    <h2>Flex-basis</h2>
+    <div class="box">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    <hr>
+
+    <h2>Flex-grow</h2>
+    <div class="box2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    <hr>
+
+    <h2>Flex-shrink</h2>
+    <div class="box3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <h2>Shorthand flex</h2>
+    <div class="box4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+
+    <div class="page">
+        <aside>Aside</aside>
+        <main>
+            Main
+            <section>Content 1</section>
+            <section>Content 2</section>
+            <section>Content 3</section>
+        </main>
+    </div>
+    <hr>
+
+    <h2>Order</h2>
+    <div class="box5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!--
+    PROPRIDADES DO FLEX CONTAINER
+        * Dirreção dos itens
+        * Multi linhas
+        * Alinhamento
+            - principal
+            - cruzado
+        * Espaços entre os itens
+-->
+
+<!--
+    DIREÇÃO DOS ITENS
+        - Flex é uma dimensão (horizontal ou vertical)
+        - podemos mudar a direção com `flex-direction`
+        - valores: (row | row-reverse | column | column-reverse)
+-->
+
+<!--
+    FLEX-WRAP
+        - Podemos usar multi linhas
+        - Cada nova linha, um novo flex container
+        - Criar novas linhas
+        - Um novo eixo
+-->
+
+<!--
+    FLEX-FLOW
+        - Shorthand
+        - Flex-direction || flex-wrap
+-->
+
+<!--
+    JUSTIFY-CONTENT
+        - Alinhamento dos elementos dentro do container
+        - Distribuição dos elementos
+    
+    VALORES
+        - flex-start
+        - flex-end
+        - center
+        - space-around
+        - space-between
+        - space-evenly
+-->
+
+
+<!--
+    ALIGN-ITEMS
+        - Alinhamento dos elementos no eixo cruzado
+    
+    VALORES
+        - stretch
+        - flex-star
+        - flex-end
+        - center
+-->
+
+
+<!--
+    GAP
+        - Espaço entre os elementos
+
+    VALORES
+        - unidades de medidas
+            * fixas: px, pt
+            * flexíveis: %, em, rem
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="./propriedade.css">
+</head>
+<body>
+    <h1>Propriedades do Flex Container</h1>
+    <h2>Flex-direction</h2>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    <hr>
+
+    <h2>Flex-wrap</h2>
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+    <hr>
+
+    <h2>Flex-flow</h2>
+    <div class="caixa">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <hr>
+
+    <h2>Justify-content</h2>
+    <div class="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <hr>
+
+    <h2>Align-items</h2>
+    <div class="box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <hr>
+
+    <h2>Gap</h2>
+    <div class="box4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+</body>
+</html>

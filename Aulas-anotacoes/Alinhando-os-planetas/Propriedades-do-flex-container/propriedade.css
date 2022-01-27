@@ -1,0 +1,112 @@
+/*
+    flex-direction
+        - row  ->  padrão (esquerda para direita)
+        - row-reverse  ->  direção direita para esquerda
+        - column  ->  muda o eixo (vertical)
+*/
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 2px solid violet;
+}
+
+
+/* 
+    flex-wrap
+        - wrap  ->  cria novas linhas se necessário, vai para baixo
+        - wrap-reverse  ->  cria novas linhas se necessário, para cima
+
+*/
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px dashed red;
+}
+
+.box div {
+    border: 1px solid;
+    width: 100px;
+    margin-left: 1%;
+    text-align: center;
+    background-color: orange;
+}
+
+
+/* flex-flow
+    - shorthand de flex-direction e flex-wrap
+    - pode colocar uma ou mais especificação 
+*/
+.caixa {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    border: 2px dotted blue;
+}
+
+.caixa div {
+    border: 1px solid;
+    width: 80px;
+    text-align: center;
+}
+
+
+/*
+    justify-content
+        - flex-start  ->  padrão, começa no início
+        - flex-end  ->  vão para o final
+        - center ->  centraliza
+        - space-around  ->  espaços por igual ao redor deles
+        - space-between  ->  espaços entre eles
+        - space-evenly  ->  espaços iguais em cada um deles
+*/
+.box2 {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px dashed green;
+}
+
+.box2 div {
+    border: 1px solid;
+    width: 80px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+/* 
+    align-items
+        - stretch  ->  esticados no eixo cruzado (padrão)
+        - flex-start  ->  deixa os elementos no começo do eixo cruzado
+        - flex-end   ->  deixa os elementos no final do eixo cruzado
+        - center  -> centraliza os elementos no eixo cruzado
+*/
+.box3 {
+    display: flex;
+    align-items: center;
+
+    border: 2px dashed red;
+    height: 150px;
+}
+
+.box3 div {
+    border: 1px solid;
+    width: 80px;
+    text-align: center;
+}
+
+/* gap 
+        - espaços entre elementos    
+*/
+.box4 {
+    display: flex;
+    gap: 5em;
+    
+    border: 2px dashed darkorange;
+}
+
+.box4 div {
+    border: 1px solid;
+    width: 80px;
+    text-align: center;
+    background-color: pink;
+}

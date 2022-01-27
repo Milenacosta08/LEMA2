@@ -1,0 +1,145 @@
+/* 
+    flex-basis  (altura e largura)
+        - auto  ->  padrão, posso mexer com width ou height depois
+        
+*/
+.box {
+    display: flex;
+
+    border: 2px dashed red;
+}
+
+.box div {
+    border: 1px solid;
+    flex-basis: 10%;
+}
+
+/*
+    Flex-grow
+        - 0  ->  auto (padrão)
+        - 1  ->  ocupe todo o espaço disponível
+*/
+.box2 {
+    display: flex;
+
+    border: 2px dashed orangered;
+}
+
+.box2 div {
+    border: 1px solid;
+    width: 100px;
+}
+
+.box2 div:nth-child(1),
+.box2 div:nth-child(3) {
+    flex-grow: 1;
+}
+
+.box2 div:nth-child(4) {
+    flex-grow: 2;
+}
+
+/*
+    Flex-shrink
+        - 1  ->  auto (padrão)
+        - 0  ->  sem encolher
+*/
+.box3 {
+    display: flex;
+
+    border: 2px dashed blue; 
+}
+
+.box3 div {
+    border: 1px solid;
+    flex-basis: 100%;
+}
+
+.box3 div:nth-child(2), .box3 div:nth-child(3) {
+    flex-shrink: 2;
+}
+
+
+/*
+    Shorthand
+        - se tiver só um valor intrisecamente vai assumir que o flex-shrink é 1 e o flex-basis é 0
+        - quando o segundo é medida o css entende que se refere ao flex-basis
+        - O flex-basis dá mais força no tamanho
+*/
+.box3 {
+    display: flex;
+
+    border: 2px dashed green; 
+}
+
+.box3 div {
+    border: 1px solid;
+    flex: 0 1 100px;
+}
+
+
+.page {
+    border: 2px solid;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+aside {
+    background-color: aqua;
+    flex: 1;
+}
+
+main {
+    background-color: lightsalmon;
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(1) {
+    background-color: lightgreen;
+    flex: 0 0 40%;
+}
+
+main section:nth-child(2) {
+    background-color: pink;
+    flex: 0 45%;
+}
+
+main section:nth-child(3) {
+    background-color: lightseagreen;
+    flex: 1 0;
+}
+
+
+/*
+    Order
+        - por padrão é 0
+        - por questão de viabilidade não é muito bom utilizar
+        - muda visualmente mas não estruturalmente
+*/
+
+.box5 {
+    display: flex;
+
+    border: 2px dashed red;
+}
+
+.box5 div {
+    border: 1px solid;
+    flex-grow: 1;
+}
+
+.box5 div:nth-child(1) {
+    order: 3;
+}
+
+.box5 div:nth-child(2) {
+    order: 1;
+}
+
+.box5 div:nth-child(3) {
+    order: -1;
+}
