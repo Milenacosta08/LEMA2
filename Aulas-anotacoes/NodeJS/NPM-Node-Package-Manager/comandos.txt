@@ -1,0 +1,58 @@
+INICIANDO PACONTE COM npm
+    npm init
+
+
+INICIANDO PACOTE COM npm DIZENDO SIM PARA TUDO
+    npm init y
+
+
+INSTALANDO DEPENDÊNCIAS (MÓDULOS DE TERCEIROS)
+    npm install cfonts
+    npm i cfonts
+    npm i cfonts -D  (instala só quando for desenvolvedor)
+    npm i cfonts chalk outros
+
+
+------------------------------------------
+O ARQUIVO gitignore ESTÁ SERVINDO PARA NÃO MANDAR O DIRETÓRIO node_modules PARA O MEU PROJETO
+
+NÃO SE MEXE OU APAGA O ARQUIVO package-lock.json
+------------------------------------------
+
+RODAR SCRIPT COM O npm
+    1. edita no package.json
+    2. npm run nomeAqui
+
+
+INSTALAR MÓDULO GLOBAL
+    npm i nomeAqui -g
+
+    - saber onde instalou
+        npm root -g
+
+
+MUDAR VERSÃO DOS PACOTES INSTALADOS
+    - ex package.json: "nomeAqui": "2.29.1"
+                major.minor.patch
+                * patch  ->  resolvendo bug
+                * minor  ->  vai ter alterações mais não vai quebrar
+                * major  ->  versão do projeto, pode quebrar
+   - quando na frente da VERSÃO
+        ^  ->  vai atualizar o patch e o minor
+        ~  ->  vai atualizar só o patch
+        só a versão  ->  nunca vai atualizar
+        somente *  ->  vai atualizar todas as versões
+
+   - comandos
+        npm outdated  ->  saber as atualizações
+        nmp upgrade  ->  atualizar
+        npm i nomeAqui@versaoAqui   ->  baixar versão específica
+        npm i nomeAqui@latest  ->  instalar última versão
+
+
+DESINSTALAR PACOTES
+    npm uninstall nomeAqui
+
+
+DESINSTALAR MÓDULO GLOBAL
+    npm uninstall nomeAqui -g
