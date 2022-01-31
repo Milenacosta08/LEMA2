@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <%- include('../partials/head'), %>
+
+    <body class="container">
+
+        <!--
+            - Pode passar um objeto dentro do coisa do EJS
+            - É preciso colocar esse objeto nas páginas que utilizam o include
+        -->
+        <%- include('../partials/header', {pagina: 'About'}); %>
+
+        <main>
+            <div class="jumbotron">
+                <h1>Sobre mim</h1>
+                <p>Oi sou Milena Gondim aluna do programa de programação da Rocketseat</p>
+            </div>
+        </main>
+
+        <%- include('../partials/footer'); %>
+    </body>
+</html>
