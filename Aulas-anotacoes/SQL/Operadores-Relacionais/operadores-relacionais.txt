@@ -1,0 +1,38 @@
+------  OPERADORES RELACIONAIS  ------
+
+IGUAL ( = )
+    - Só funciona para campos que são NUMBER
+    - Pegar uma única informação (usuário)
+    - Exemplo: SELECT * FROM aluno WHERE matricula = 1 
+
+LIKE ( like )
+    - Funciona para campos de texto
+    - Busca o texto dentro do campo
+    - Exemplo: SELECT * FROM aluno WHERE nome like 'milena Gondim'
+    - Procurar conteúdo de texto incompleto com o %
+        * Exemplo: SELECT * FROM aluno WHERE nome like 'j%'
+
+MAIOR QUE ( > )
+    - Utilizado para campos NUMBER
+    - Exemplo: SELECT * FROM alunos WHERE matricula > 1
+
+MENOR QUE ( < )
+    - Utilizado para campos tipo NUMBER
+    - Exemplo: SELECT * FROM aluno WHERE matricula < 4
+
+MAIOR OU IGUAL ( >= )
+    - Utilizado para campos tipo NUMBER
+    - Exemplo: SELECT * FROM aluno WHERE matricula >= 2
+
+MENOR OU IGUAL ( <= )
+    - Utilizado para campos do tipo NUMBER
+    - Exemplo: SELECT * FROM aluno WHERE matricula <= 3
+
+NÃO IGUAL ( <> )
+    - Utilizado para campos do tipo NUMBER
+    - Traz todos menos o especificado
+    - Exemplo: SELECT * FROM aluno WHERE matricula <> 1
+
+DIFERENTE DE ( != )
+    - Utilizado para campos do tipo NUMBER
+    - Exemplo: SELECT * FROM aluno WHERE matricula != 3

@@ -1,0 +1,21 @@
+------  OPERADORES MATEMÁTICOS  ------
+
+ADIÇÃO ( + )
+    - Utilizado apenas nos campos do tipo NUMBER
+    - Exemplo: SELECT * FROM aluno WHERE matricula = 1 + 1
+
+SUBTRAÇÃO ( - )
+    - Utilizado apenas nos campos do tipo NUMBER
+    - Exemplo: SELECT * FROM aluno WHERE matricula = 3 - 1
+
+MULTIPLICAÇÃO ( * )
+    - Utilizado apenas nos campos do tipo NUMBER
+    - Exemplo: SELCET * FROM aluno WHERE matricula = 1 * 2
+
+DIVISÃO ( / )
+    - Utilizado apenas nos campos do tipo NUMBER
+    - Exemplo: SELCET * FROM aluno WHERE matricula = 2 / 1
+
+MÓDULO ( % )
+    - Utilizado apenas nos campos do tipo NUMBER
+    - Exemplo: SELCET * FROM aluno WHERE matricula = 4 % 3

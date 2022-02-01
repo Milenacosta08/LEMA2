@@ -1,0 +1,13 @@
+----- MAIS COMANDOS ------
+
+1. INSERT
+    - Inserir mais informações na tabela
+    * Exemplo: INSERT INTO aluno(nome, cpf, responsavel) VALUES('Milena Gondim', 88877744445, 'Maria Luiza')
+
+2. UPDATE
+    - Alterar algum dado já inserido na tabela
+    * Exemplo: UPDATE aluno SET nome='Mariano Soares', cpf=12345678945 WHERE matricula = 2
+
+3. DELETE
+    - Excluir uma informação do banco de dados
+    * Exemplo: DELETE FROM aluno WHERE matricula = 3

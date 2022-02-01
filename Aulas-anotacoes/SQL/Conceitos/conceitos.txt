@@ -1,0 +1,29 @@
+---- CONCEITOS DE BANCO DE DADOS ----
+
+* É dividido em tabelas
+* Campos: são os títulos das informações
+* Informações: são cadastradas em cada tabelas
+* Relação entre tabelas: relacionar as informações de uma tabela com a outra
+* Exemplo:
+
+    matricula       nome                cpf             responsavel
+      0101        João Augusto        123456789        Maria Fernanda
+      0102        Isabela Costa       987654321        Fagner Costa
+      1           Otávio Silva        789123456        Maria Isabel
+
+
+    id_professor    nome                cpf             materia
+      1           Mayk Brito          123654987        JavaScript
+      2           Joselita Gomes      456123789        Node JS
+      3           Maria Isabel        120345698        Banco de Dados
+
+
+    id_professor    id_aluno
+      1               0101
+      1               0102
+      1               1
+      2               0102
+      2               1
+      3               1
+      3               0101
+

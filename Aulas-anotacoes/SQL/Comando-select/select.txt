@@ -1,0 +1,9 @@
+----- COMANDO SELECT ------
+
+- SELECT * FROM nomeAqui  ->  seleciona tudo da tabela
+
+- SELECT camposAqui, separadosPorVírgulas FROM nomeAqui  ->  seleciona campos específicos
+
+- SELECT * FROM nomeAqui WHERE matricula = 1  ->  seleciona informações quando uma característica específico for encontrada
+
+- SELECT * FROM nome Aqui WHERE nome = 'j%'  ->  o % serve como coringa

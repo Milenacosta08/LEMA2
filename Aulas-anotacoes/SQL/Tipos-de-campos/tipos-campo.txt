@@ -1,0 +1,44 @@
+---- TIPOS DE CAMPOS ----
+
+* É preciso informar ao banco de dados o tipo de cada campo da tabela
+    - TEXT  -> Pode ter caracteres especiais (underline, espaços), números, letras
+    - NUMBER  ->  Apenas números
+    - DATATIME  ->  Específico para datas de horas, Permitido usar números e caracteres
+    - PRIMARY KEY  ->  Identificador, não pode se repetir, informação única
+    - FOREIGN KEY (chave estrangeira)  ->  Referenciar a primary key de outra tabela, pode repetir
+    - UNIQUE  ->  Nunca pode repetir
+
+    - Exemplo:
+
+        |   Tabela: perfil              |
+        ---------------------------------
+        |  Nome: TEXT                   |
+        |  Nome_de_Usuario: TEXT Unique |
+        |  Descricao: TEXT              |
+        |  Telefone: NUMBER             |
+        |  id_user: NUMBER PRIMARY KEY  |
+        ---------------------------------
+
+
+        |   Tabela: post                       |
+        ----------------------------------------
+        |  id_post: NUMBER                     |
+        |  post: TEXT                          |
+        |  video: TEXT                         |
+        |  data: DATATIME                      |
+        |  id_user: NUMBER FOREIGN KEY(perfil) |
+        ----------------------------------------
+
+
+        -----------------------------------------------------------------------
+        Nome       Nome_de_Usuario   Descricao             Telefone     id_user
+        Josefina   @Jose_demais      Dancinhas originais   8897584201   1
+        Mariana    @Marianaamo       oh no no no no        8895742361   2
+        -----------------------------------------------------------------------
+
+
+        ----------------------------------------------------------------
+        id_post     Post                video              data          id_user
+        1           Estudando BD        bancoDados.mp4     01-02-2022    1
+        2           Olha esse vídeo     video.mp4          01-02-2022    2 
+        ----------------------------------------------------------------
