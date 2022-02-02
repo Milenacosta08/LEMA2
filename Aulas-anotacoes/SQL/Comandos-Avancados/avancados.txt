@@ -1,0 +1,87 @@
+------ COMANDOS AVANÇADOS --------
+
+* ORDER BY
+    - Ordenar por campo
+    - Crescente e decrescente
+    - Exemplo:
+        * Crescente
+            SELECT * FROM aluno ORDER BY nome
+        * Decrescente
+            SELECT * FROM aluno ORDER BY nome DESC
+
+* LIMIT
+    - Limitar os resultados
+    - Exemplo:
+        SELECT * FROM aluno LIMIT 2
+
+* OFFSET
+    - Quantos registros ignorar
+    - Ignora os primeiros que encontrar
+    - Exemplo:
+        SELECT * FROM funcionarios LIMIT 4 OFFET 2
+
+* COUNT
+    - Contar os registros da tabela
+    - Conta a partir de algum campo
+    - Exemplo:
+        SELECT count(nome) FROM funcionarios
+
+* GROUP BY
+    - Agrupar dados semelhantes
+    - Exemplo:
+        SELECT id_departamento, count(id_departamento) FROM funcionarios GROUP BY id_departamento
+
+* JOIN, GROUP BY e COUNT juntos
+    - Exemplo:
+        SELECT departamentos.discricao, count(funcionarios.id_departamento)
+        FROM funcionarios
+        JOIN departamentos
+        ON funcionarios.id_departamento = departamentos.id_dept
+        GROUP BY departamentos.id_dept
+
+* HAVING
+    - Comparação dos campos agrupados
+    - Pode usar todos os operadores lógicos
+    - Exemplo:
+        SELECT departamentos.descricao, count(funcionarios.id_departamento)
+        FROM funcionarios 
+        JOIN departamentos
+        ON funcionarios.id_departamento = departamentos.id_dept
+        GROUP BY departamentos.id_dept
+        HAVING count(funcionarioa.id_departamento) > 2
+
+* CREATE TABLE
+    - Criar tabelas no banco
+    - Criar arquivo com extensão .sqlite
+        - NUMBER -> INTEGER
+        - TEXT -> TEXT
+        - AUTOINCREMENT  ->  Auto incrementa o número
+    - Exemplo:
+        CREATE TABLE aluno (
+            matricula INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, cpf INTEGER UNIQUE, responsavel TEXT
+        )
+
+        CREATE TABLE professore (
+            id_professor INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, cpf INTEGER UNIQUE, materia TEXT
+        )
+
+        CREATE TABLE aulas (
+            id_professor INTEGER,
+            matricula INTEGER
+            FOREIGN KEY(id_professor) REFERENCES professores(id_professor),
+            FOREIGN KEY(matricula) REFERENCES alunos(matricula)
+        )
+
+* ALTER TABLE
+    - Alteração nas tabelas
+    - Exemplo:
+        -> Renomear tabela
+            ALTER TABLE aluno RENAME TO alunos
+        -> Renomear campo
+            ALTER TABEL aulas COLUMN matricula TO matricula_aluno
+
+* DROP TABLE
+    - Excluir uma tabela
+    - Apaga tudo junto com os registros da tabela
+    - Exemplo:
+        DROP TABLE alunos

@@ -1,0 +1,16 @@
+-------------- GERENCIANDO DADOS ----------------
+
+* Estrutura de dados tem a ver com a gestão das informações da aplicação
+* Para esse gerenciamento, podemos dividir em 3 etapas:
+    1. Modelar a estrutura;
+    2. Dar vida à estrutura (instalar essa estrutura);
+    3. Criar as funcionalidaes dessa estrutura
+        - Exemplo: inserir, excluir, buscar, exibir, contar...
+
+
+-------------- VISÃO GERAL -----------------------
+- Usamos ED para gerenciar os dados, as informações da nossa aplicação
+- Organizar, ordenar, buscar, são algumas funcionalidades básicas
+- Mehorar a escrita de algoritimos
+- Melhorar a eficiência dos nossos aplcativos
+- Existem muitas estrutras a serem estudadas

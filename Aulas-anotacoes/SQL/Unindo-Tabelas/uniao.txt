@@ -1,0 +1,31 @@
+------ UNINDO TABELAS ------
+
+* JOIN
+    - Unir tabelas que tenham um relacionamento
+    - Exemplo: SELECT * FROM funcionarios JOIN departamentos ON departamentos.id_dept= funcionarios.id_departamento
+
+* JOIN COM WHERE
+    - Selecionar onde tal característica for encontrada
+    - Exemplo: SELECT * FROM funcionarios JOIN departamentos ON departamentos.id_dept= funcionarios.id_departamento WHERE departamentos.id_dept = 2
+
+* JOIN ESPECIFICANDO CAMPOS
+    - Exemplo: 
+        SELECT funcionarios.nome, funcionarios.cpf, departamentos.descricao FROM funcionarios JOIN departamentos ON departamentos.id_dept= funcionarios.id_departamento
+
+* ALIAS
+    - Mudar nomes/apelidos para as coisas dentro do select
+    - Melhorar a visualização
+    - Exemplo:
+        SELECT func.nome as 'Nome', func.cpf as 'CPF', dept.descricao as 'Departamento'
+        FROM func as func
+        JOIN dept as dept
+        ON dept.id_dept= func.id_dept
+
+* LEFT OUTER JOIN
+    - Faz com que todo o contúdo apareça mesmo não tendo um relacionamento com a outra tabela
+    - Prioriza a tabela da esquerda
+    - Exemplo:
+        SELECT funcionarios.nome, funcionarios.cpf, departamentos.descricao 
+        FROM funcionarios 
+        LEFT OUTER JOIN departamentos 
+        ON departamentos.id_dept= funcionarios.id_departamento
