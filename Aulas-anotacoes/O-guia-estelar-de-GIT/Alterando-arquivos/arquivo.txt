@@ -1,0 +1,47 @@
+--------------- EDITANDO ARQUIVO -----------
+-  vim nomeAqui
+-  git add .
+-  git commmit -m "commitando"
+
+
+---------- VERIFICAR MODIFICAÇÕES --------
+-  git diff
+    * quando aparecer menos (-) é remoção nos arquivos
+    * quando aprece mais (+) é adição nos arquivos
+    * diz quais foram as modificações do repositório local e do diretório
+    * o que tem no Working Directory versus o que tem no Repositório
+
+- git diff --staged (ou cached)
+    * mostra o que tem no Stage Area versus o que tem no Repositório
+
+
+
+----------- DELETANDO ARQUIVOS COM O GIT ----------
+* git rm nomeAqui   ->  remove o arquivo, não vai para a lixeira
+    - já vai para o Stage Area
+    - após é só dar o commit
+
+* remover na manualemente
+    - depois adiciona ao Stage Area com git add nomeAqui
+    - depois faz o commit
+
+
+----------  RENOMEAR E MOVER ARQUIVOS --------
+
+> RENOMEAR
+* Renomear manualmente
+    - Aparece como se o arquivo tivesse sido deletado e criado outro arquivo
+    - É preciso dar o git rm nomeAqui
+    - Depois dar um git add nomeAqui
+
+* git mv (mover o arquivo = renomear)
+    - git mv nomeAqui novoNome
+    - já vai para o Stage Area
+
+> MOVER
+* git mv
+    - git mv nomeAqui sub/nomeAqui
+    - já vai para o Stage Area
+
+* Manualmente: da mesma forma que o RENOMEAR
+

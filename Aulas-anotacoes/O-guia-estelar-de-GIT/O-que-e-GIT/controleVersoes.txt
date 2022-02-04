@@ -1,0 +1,51 @@
+------------------ CONTROLE DE VERSÃO -------------------
+* Registro de alterações em um ou mais arquivo
+* Lembrar versões específicas mais tarde
+* Reverter para estado anterior determindados arquivos ou um projeto
+* Comparar as mudanças ao longo do tempo
+* Ver quem modificou pela última vez algo que pode estar causando um problema
+* Quem introduziu um problema ou quando
+* Se você estragar tudo ou perder arquivos, você pode facilmente recuperar
+* VCS - Version Control System
+
+
+----------------- TIPOS DE CONTROLE DE VERSÃO ----------------
+* Sistemas Locais
+    - Copiar os arquivos para outro diretório
+    - Muito comum e muito simples
+    - Incrivelmente propensa a erros
+    - Fácil de sobreescrever arquivos, caso haja feito uma cópia errada
+
+* Sistema Centralizado
+    - Exemplo: CVS, Subversion e Perforce
+    - Um único servidor que contém todos os arquivos de controle de VERSÃO
+    - Vários clientes usam arquivos a partir desse lugar central
+
+    - VANTAGENS SOBRE VCSs LOCAIS
+        > Controle sobre atividades dos colaboradores
+        > Os administradores têm controle refinado sobre quem pode fazer o que
+        > Mais fácil de administrar um CVCS do que lidar com bancos de dados locais em cada cliente
+
+    - DESVANTAGENS
+        > Se esse servidor der problema por uma hora, durante essa hora ninguém pode colaborar ou salvar as alterações de versão para o que quer que eles estejam tranalhando
+        > Se o disco rígido do banco de dados central for corrompido, você perde absolutaente tudo
+        > Sistemas VCS locais sofrem com esse mesmo problema
+
+* Sistemas Distribuídos
+    - Exemplo: Git, Mercurial, Bazaar ou Darcs
+    - Duplicar (clonar) localmente o repositório completo
+    - Se qualquer servidor morrer, e esses sistemas estiverem colaborando por meio dele, qualquer um dos repositórios do cliente poderá ser copiado de volta para o servidor
+    - Cada clone é de fato um backup completo de todos os dados
+    - Clientes usam o estado mais recente dos arquivos
+
+
+--------------- O QUE É O GIT ------------------------
+* Sistema de controle de versão Distribuídos
+* Open-source
+* Pontos na história: commit (viagem no tempo)
+    - Histórico de alterações no código
+    - Voltar para qualquer ponto da história
+* Controlar o fluxo de novas funcionalidades
+    - Ramificação: banch (universos paralelos)
+    - Vários devs no mesmo projeto
+    - Análise e resolução de conflitos

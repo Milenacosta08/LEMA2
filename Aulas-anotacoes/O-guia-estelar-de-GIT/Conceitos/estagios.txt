@@ -1,0 +1,32 @@
+------------- TRÊS ESTADOS DO ARQUIVO ------------
+1. git/clone  -> inicia o projeto
+    - Os arquivos estarão no estado Working Directory
+
+2. add  ->  adiciona o arquivo ao próximo estado
+    - Stage Area
+        > O arquivos já estão preparados para o próximo estado, repositório
+
+3. commit  ->  Coloca o arquivo no repositório
+    - Local Repository
+
+
+------------------ GIT WORKFLOW -----------------
+* Fluxo de trabalho do git
+
+1. Working Directory
+    - Todos os nossos arquivos
+    - Working tree
+
+2. Stage Area
+    - Preparação dos nossos arquivos, para serem commitados
+    - Index
+    - Stage tree
+
+3. Local Repository
+    - Banco de dados dos nossos arquivos
+    - Onde ficarão os pontos de história
+    - Ou o histórico
+
+-------- HEAD ----------
+* Ponteiro que aponta em que ponto da história estamos
+

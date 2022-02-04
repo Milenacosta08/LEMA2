@@ -1,0 +1,25 @@
+------------ O GIT GUARDA O HISTÓRICO DO PROJETO ------------
+* Para acessar
+    ls -al .git    -> listar
+    cat .git/config   -> acessar
+
+---------- COMMIT ----------
+* Comandos
+    - git add .                     -> adiciona tudo no Stage Area
+    - git add *.extensão            -> adiciona todos os arquivos que tenham essa extensão
+    - git commit -m " texto "       -> commita a alteração para o Local Repository
+    - git status                    -> saber status cada etapa
+    - git rm --cached nomeAqui      -> remove arquivo do Stage Area
+    - git restore --staged nomeAqui -> retira modificação do Stage Area para não ficar no ponto da história
+
+
+----- GIT LOG ------
+* Saber os pontos da história
+    - git log                       -> completo
+    - git log --oneline             -> curtinho
+    - git log -n 5                  -> os 5 últimos commits 
+    - git log --since=2020-10-01    -> commits desde certa data
+    - git log --untll=2020-10-01    -> commists anteriores a tal data
+    - git log --author=Milena       -> commits do autor
+    - git log --grap="init"         -> filtra commit pelo texto
+    
