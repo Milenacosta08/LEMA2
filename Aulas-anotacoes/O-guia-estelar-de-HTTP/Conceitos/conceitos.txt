@@ -1,0 +1,34 @@
+--------------- CLIENTE --------------
+* User Agent
+    - Browser
+    - cURL
+
+* Entidade que dá início à comunicação
+
+* Ações do CLIENTE
+    - GET
+    - POST
+    - PUT
+    - DELETE
+
+
+------------------- SERVIDOR ----------------
+* Se apresenta como uma máquina
+* Preparado para ouvir e processar
+* Vários servidores em um computador
+* Resposta
+    - Status Code
+        -> 404
+        -> 500
+
+
+------------------ PROXIES ------------------
+* Representantes
+* Fica entre o cliente e o servidores
+* Ajudam a fazer o transporte dos dados
+* Diversas funções
+    - Cache
+    - Filtro (tipo um antivírus, ou controle parental)
+    - Load balancing (distribuição da carga)
+    - Autenticação
+    - Autorização

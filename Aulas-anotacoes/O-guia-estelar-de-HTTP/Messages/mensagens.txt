@@ -1,0 +1,31 @@
+------------- HTTP Messages ------------
+- Mensagens
+- HTTP/1.1
+    -> Legível
+    -> Texto
+
+- HTTP/2
+    -> Estrutura binária
+    -> Otimização
+    -> Mesma maneira que a versão 1.1
+
+
+------------- REQUEST -----------
+* Pedido
+* Request Line
+    - Method
+    - Protocol version
+    - URI
+* Body
+* Headers
+
+curl -v https://www.google.com
+
+
+-------------- RESPONSE ----------------
+* Protocol version
+* Status code
+* Headers
+* Status message
+
+curl -i https://www.google.com

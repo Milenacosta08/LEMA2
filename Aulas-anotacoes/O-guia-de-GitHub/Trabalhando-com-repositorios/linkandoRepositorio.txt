@@ -1,0 +1,18 @@
+----------- LINKANDO UM REPOSITÓRIO REMOTO COM LOCAL ---------
+- Fazendo manualmente
+    * QUANDO NÃO TENHO REPOSITÓRIO
+
+        -> echo "# demo" >> README.md   // COLOCAR NOME DO REPOSITÓRIO NO README.md
+        -> git init   // INICIALIZAR O GIT
+        -> git add README.md    // ADICIONAR O README.md
+        -> git commit -m "first commit"   // COMMITAR O REDME.md
+        -> git branch -M main   // CRIA A BRANCH main
+        -> git remote add origin https://github.com/MilenaCosta08/demo.git   // ADICIONAR O REPOSITÓRIO REMOTO
+        -> git push -u origin main   // ENVIAR O COMMIT PARA O REPOSITÓRIO REMOTO
+
+    * QUANDO JÁ EXISTE UM REPOSITÓRIO
+        -> git remote add origin sshAqui    // ADICIONAR REPOSITÓRIO REMOTO
+        -> git branch -M main   // CRIANDO A BRANCH main
+        -> git push -u origin main  // ENVIANDO O REPOSITÓRIO
+
+        -> git remote -v   // VER OS REPOSITÓRIOS DA NUVEM

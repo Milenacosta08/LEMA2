@@ -1,0 +1,48 @@
+--------------- URI ---------------
+* URI (Uniform Resource Identifier)
+    - Identificar um recurso
+    - Nome ou localização
+    - Exemplo: Você é um Recurso, seu nome, sua localização
+
+
+--------------- RESOURCE ------------
+* Recurso
+    - O alvo do pedido
+    - Qualquer coisa identificável / Entidade
+        -> Digital (email)
+        -> Abstrata (sessão, autentificação)
+        -> Física (produtos, usuários)
+        -> Se podemos identificar, nomear, endereçar ou manipular, estamos falando de um recurso
+
+
+-------------- LOCATOR -------------
+* Localizador
+* URL (Uniform Resource Locator)
+    - Componentes obrigatórios
+        -> Protocolo
+        -> Domínio
+    - Componentes opcionais
+        -> Subdomínio
+        -> Path
+        -> Parametros
+        -> Porta
+        -> Âncora
+
+* Exemplos
+    - https://www.rocketseat.com.br/blog
+    - https://www.youtube.com/watch?v=vpYct2npKD8
+    - http://127.0.0.1:3333/index.html#algumlugar
+
+
+------------------ NAME -----------
+* URN (Uniform Resource Name)
+    - Exemplo
+        -> urn:isbn:0451450523
+        -> urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+
+
+
+
+
+
+

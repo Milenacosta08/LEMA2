@@ -1,0 +1,19 @@
+-------------- VISÃO GERAL -----------
+* HyperText Transfer Protocol (Protocolo de Transferência de HyperTexto)
+    - Permite troca de informações e dados na internet
+    - Uma troca de mensagens
+    - HTML, CSS, Scripts, Imagens, Video
+    - Uma chamada para cada um desses recursos
+
+
+------------ VISUALIZANDO COM CURL -------
+- manual
+    man curl
+
+- pegar preview
+    curl https://google.com
+
+- pegar headers
+    curl -i https://google.com
+
+    curl -v https://google.com

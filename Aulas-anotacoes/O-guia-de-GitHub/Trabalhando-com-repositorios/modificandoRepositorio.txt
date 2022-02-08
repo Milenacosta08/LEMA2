@@ -1,0 +1,14 @@
+--------- MODIFICANDO ARQUIVOS LOCAL E ENVIANDO PARA REPOSITÓRIO REMOTO -------
+    -> git commit -am ":pencil: chagin readme"
+    -> git push
+
+
+------- MODIFICANDO ARQUIVOS REMOTOS E PUXANDO PARA REPOSITÓRIO LOCAL --------
+    -> git pull
+
+
+
+------ CORRIGIR CONFLITOS ----
+    -> cd diretorio   // ENTRAR NO REPOSITÓRIO
+    -> git config --global pull.rebase false   // PADRÃO DE MERGE
+    -> git pull
