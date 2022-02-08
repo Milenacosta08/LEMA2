@@ -1,0 +1,12 @@
+------------ CRIANDO CHAVE SSH ------------
+* Para ter acesso ao reposritório do GitHub
+* Comando terminal
+    ssh-keygen -t rsa -b 4096 -C "email do github aqui"
+
+*  ver
+    cd ~/.ssh/id_rsa
+
+* Pegar chave
+    cat ~/.ssh/id_rsa.pub
+
+* Copiar tudo e colar no local específico do GitHub

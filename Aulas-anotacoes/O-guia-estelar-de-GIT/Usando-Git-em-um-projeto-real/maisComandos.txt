@@ -1,0 +1,26 @@
+------------ STAGIN E COMMITS COM ATALHO --------------------
+* Quando os arquivos já estão rastreados, não precisa colocar o git add e depois o git commit
+* Utilize:  git commit -am "mensagem aqui"
+* Ele vai direto para o Repositório
+
+
+
+--------- VER MODIFICAÇÕES EM DIVERSOS PONTOS DA HSTÓRIA -----
+* Ver diferenças entre dois potos da hitória
+    git show iniciaisCommitAqui
+* Mostra todas as alterções no commit
+* É possível filtrar
+    git show iniciaisCommitAqui -- src/talArquivo
+
+-------- IGNORANDO ARQUIVOS E DIRETÓRIOS INDESEJADOS -----------
+* Utilizar .gitignore
+    - No arquivo colocar um ponto e o nome do que quer ignorar
+        .modules_numseoq     (arquivo)
+        .durfte/             (diretório)
+
+passo 1: criar arquivo .gitignore
+passo 2: adicionar arquivo no staged area
+passo 3: adicionar no Repositório
+passo 4: resetar 
+    git rm -r --cached .
+passo 5: adicionar tudo de novo no staged area e no repositório

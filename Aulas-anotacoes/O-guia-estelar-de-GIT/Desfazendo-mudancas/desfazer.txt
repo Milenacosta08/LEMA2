@@ -1,0 +1,36 @@
+---------------- DESFAZENDO MODIFICAÇÕES -----------------
+* Alterações nos arquivos 
+    - Discartar alterações feitas no Working Directory
+        * git restore nomeAqui
+
+    - Discartar alterações que já estão no Stage Area
+        * git restore --staged nomeAqui (ou ponto, para resetar tudo)
+                    ou
+        * git reset HEAD nomeAqui (antigo)
+
+
+* Alterações no commit
+    - No último commit
+        * git commit --amend -m "modificação aqui"
+
+
+------------------- RECUPERANDO ARQUIVOS ---------------
+* Pegar arquivo do histórico
+    1. copiar começo da hash do commit que deseja restaurar
+    2. git checkout hashAqui -- nomeAqui
+
+
+------------- REMOVENDO ARQUIVOS NÃO RATREADOOS ----------
+* Maneira destrutiva (não vai para lixeira)
+    git clean -f
+
+
+------------- REVERTER MÚLTIPLOS ARQUIVOS ---------------
+* O diretório deve estar limpo
+* Voltar na história
+    git revert HEAD~5
+
+* Outra maneira
+    - git log --oneline  (para saber para qual ponto da história quer voltar)
+    - copiar hash do ponto escolhido
+    - git revert hasAqui
