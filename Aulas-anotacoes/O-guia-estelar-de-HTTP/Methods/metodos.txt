@@ -1,0 +1,153 @@
+----------------- METHODS ------------
+* HTTP Methods
+    - Define um conjunto de métodos HTTP
+    - Indica a açõa que o cliente deseja operar
+    - Podem ser chamados de Verbos HTTP
+    - Cada um possui a sua semântica
+
+* Características
+    - Seguro
+        -> Não altera o estado do servidor
+        -> Somente leitura
+        -> Cliente não solicita alterações
+        -> Não há carga extra para o servidor
+        -> O servidor é responsável em manter o método Seguro
+        -> Quais são eles
+            * GET -> GET / search.html HTTP/1.1
+            * HEAD
+            * OPTIONS
+
+    - Idempotente
+        -> Ao executar o método, a resposta deverá ser sempre a mesma
+        -> Quais são
+            * Todos os seguros são idempotentes
+            * PUT
+            * DELETE
+        -> Status code poderá ser diferente
+        -> O servidor tem a responsabilidade de retornar dados da mesma maneira
+        -> Essa especificação não é garantida de que todos os servidores irão aplicar o conceito corretamente
+
+
+    HTTP METHODS    IDEMPOTENCE     SAFETY
+        GET             YES          YES
+        HEAD            YES          YES
+        PUT             YES          NO
+        DELETE          YES          NO
+        POST            NO           NO
+        PATCH           NO           NO
+
+
+
+--------------------- JSON Server ---------------
+* github.com/typicode/json-server
+* Instalar
+    npm install -g json-server
+
+* Criar arquivo para db.json
+    colar o que ele manda no arquivo
+
+* Iniciar servidor
+    json-server --watch db.json
+
+
+--------------------- OPTIONS -----------------
+* Informações sobre disponibilidades de requisição
+    - OPTIONS/index.html HTTP/1.1
+    - OPTIONS * HTTP/1.1
+* Características
+    - Seguro: SIM
+    - Idempotente: SIM
+    - BODY
+        -> Request: NÃO
+        -> Response: NÃO
+    - Uso em formulários HTML: NÃO
+    - Cacheable: NÃO
+
+* curl -x OPTIONS http://localhost:3000/posts
+
+
+----------------- GET ---------------
+* Pegar um Recurso
+* Somente recebe dados
+* Características
+    - Seguro: SIM
+    - Idempotente: SIM
+    - BODY
+        -> REQUEST: NÃO
+        -> RESPONSE: SIM
+    - Cacheable: SIM
+    - Uso em formulários HTML: SIM
+
+* curl http://localhost:3000/posts
+* curl -v http://localhost:3000/posts
+
+
+----------------- HEAD -------------------
+* Semelhante ao GET
+* Porém recebemos somente o cabeçalhoo
+    -> HEAD/posts
+* Características
+    - Seguro: SIM
+    - Idempotente: SIM
+    - BODY
+        -> Request: NÃO
+        -> Response: NÃO
+    - Uso em formulários HTML: NÃO
+    - Cacheable: SIM
+
+* curl -I http://localhost:3000/posts
+
+
+----------------------- POST -------------------------
+* Publicar/Cadastrar um Recurso
+* Características
+    - Seguro: NÃO
+    - Idempotente: NÃO
+    - BODY
+        -> Request
+        -> Response
+    - Uso em formulários HTML: SIM
+    - Poderá se cacheable
+
+* curl -d '{"id": 2, "title": "json-server-2", "author": "Milena Costa"}' -H "Content-type: application/json" -X POST http:localhost:3000/posts
+
+
+--------------------------- PUT ----------------------------
+* Cria um novo ou atualiza um recurso
+    - PUT/profile HTTP/1.1
+    - Criação 
+        -> Status code 201
+    - Atualização
+        -> Status code 204 ou 200
+
+* Características
+    - Seguro: NÃO
+    - Idempotente: SIM
+    - BODY
+        -> Request: SIM
+        -> Response: NÃO
+    - Uso em formulário HTML: NÃO
+    - Cacheable: NÃO
+
+* curl -d '{"name": "milena"}' -H "Content-type:application/json" -X PUT http://localhost:3000/profile
+
+
+------------------------- PATCH ------------------
+* Modificação parcial de um recurso
+    - Diferente do PUT
+    - PATCH/posts/1 HTTP/1.1
+
+* Características
+    - Seguro: NÃO
+    - Idempotente: NÃO
+    - BODY
+        -> Request: SIM
+        -> Response: SIM
+    - Uso em formulários HTML: NÃO
+    - Cacheable: NÃO
+
+* curl -X OPTIONS http://localhost:3000/posts -i
+* curl -d '{"title": "my-title"}' - H "Content-type: appliction/json" -X PATCH http://localhost:3000/posts/1
+
+
+--------------------- DELETE ----------------------
