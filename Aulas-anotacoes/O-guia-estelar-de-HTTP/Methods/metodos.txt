@@ -151,3 +151,21 @@
 
 
 --------------------- DELETE ----------------------
+* Remover um recurso
+* DELETE/post HTTP 1.1
+* Status code 
+    - 202  ->  Aceito
+    - 204  ->  Não tem conteúdo de resposta
+    - 200  ->  Deletado
+
+* Características
+    - Seguro: NÃO
+    - Idempotente: SIM
+    - BODY
+        -> Request: POSSIBILIDADE
+        -> Response: POSSIBILIDADE
+    - Uso em formulários HTML: NÃO
+    - Cacheable: NÃO
+
+* curl -X DELETE https://localhost:3000/posts/2
+

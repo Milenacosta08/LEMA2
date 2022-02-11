@@ -1,0 +1,43 @@
+---------- HEADERS -------
+* Cabeçalhos
+* Informações adicionais para o pedido ou resposta
+* Nome: valor
+    - Content-type: application/json
+    - Content-Type: text/html
+
+
+---------- HEADERS CONTEXTOS ---------
+* General
+* Request
+* Response
+
+* Buscando ajuda
+    - Dev Docs   ->  online e upload
+
+
+--------------- STATUS CODE ---------
+* Mais comuns
+    - 100  ->  continue
+
+    - 200  ->  OK (GET, POST)
+    - 201  ->  Created (PUT)
+    - 204  ->  No Content (DELETE, PUT)
+
+    - 301  ->  Movido permanentemente (GET)
+    - 308  ->  Movimetação permanente (POST)
+    - 302  ->  Encontrado (GET)
+    - 307  ->  Redirecionamento temporário
+
+    - 400  ->  Pedido mal feito
+    - 401  ->  Não autorizado
+    - 403  ->  Sem permissão de entrar
+    - 404  ->  Não Encontrado
+    - 405  ->  Método não permitido
+    - 429  ->  Bloquieo, muito pedidos
+
+    - 500  ->  Erro interno no servidor
+    - 503  ->  Serviço não disponível no momento
+
+* Mai Informações
+    - Dev docs
+
