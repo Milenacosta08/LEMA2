@@ -103,12 +103,7 @@ header {
     text-align: center;
 }
 
-#logo {
-    color: #fff;
-    font-weight: 100;
-}
-
-/* BALCANCE ====================== */
+/* BALANCE ====================== */
 #balance {
     margin-top: -8rem;
 }
@@ -118,7 +113,7 @@ header {
     color: white;
 }
 
-/* FOOTER ====================== */
+/* MAIN ====================== */
 .card {
     background-color: white;
     padding: 1.5rem 2rem;
@@ -199,7 +194,7 @@ td.income {
 }
 
 td.expense {
-    color: #e92929;
+    color: var(--red);
 }
 
 /* MODAL ====================== */
